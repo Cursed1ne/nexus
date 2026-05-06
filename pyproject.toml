@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexus-llm"
+version = "0.1.0"
+description = "NEXUS — Neural EXploitation Unified System for LLM Security"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27.0",
+    "anthropic>=0.30.0",
+    "openai>=1.35.0",
+]
+
+[project.optional-dependencies]
+dev  = ["pytest", "pytest-cov", "black", "ruff"]
+rich = ["rich>=13.0.0"]
+
+[project.scripts]
+nexus = "cli:main"
+
+[tool.setuptools.packages.find]
+exclude = ["tests*"]

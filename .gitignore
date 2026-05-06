@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg-link
+pip-wheel-metadata/
+nexus_llm.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Environment / secrets
+.env
+*.env
+.env.*
+secrets.json
+credentials.json
+
+# Qdrant / vector DB data
+qdrant_storage/
+qdrant_data/
+*.qdrant
+
+# Scan output / reports
+/tmp/
+*.html
+*.log
+reports/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# macOS resource forks / metadata
+._*
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Claude AI local config
+.claude/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
